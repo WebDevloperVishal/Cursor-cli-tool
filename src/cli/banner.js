@@ -7,7 +7,16 @@ export function renderBanner(){
         horizontalLayout: "fillted"
     })
 
-    
+    const subtitle = `${chalk.cyan('Gemini-powered')} ${chalk.gray("•")} ${chalk.magenta} ${chalk.magenta("Cli Chat")}`
 
-    console.log(title)
+    const content = `${title}\n${subtitle}`;
+
+    const boxed = boxen(content , {
+        padding: 1,
+        margin: 1,
+        borderColor:"cyan",
+        borderStyle:"round"
+    })
+
+    console.log(boxed)
 }
