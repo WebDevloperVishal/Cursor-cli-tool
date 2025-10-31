@@ -33,3 +33,7 @@ Planned features:
   });
   console.log(boxed);
 }
+
+export function pintUser(text) {
+    console.log(chalk.greemBright.bold("🔥You") + ": "+ chalk.green(text));
+}
