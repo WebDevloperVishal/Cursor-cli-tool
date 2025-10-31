@@ -7,5 +7,7 @@ export function renderBanner(){
         horizontalLayout: "fillted"
     })
 
+    
+
     console.log(title)
 }

@@ -1,7 +1,8 @@
 import express from "express";
+import { renderBanner } from "./cli/banner.js";
 
 async function main() {
-    console.log("Hello World")
+    renderBanner()
 }
 
 main();
