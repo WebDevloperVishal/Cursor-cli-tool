@@ -10,3 +10,26 @@ export function printSystem(text) {
   });
   console.log(boxed);
 }
+
+export function printHelp() {
+  const help = `
+Commands:
+  /help   Show this help
+  /exit   Quit the chat
+
+Tips:
+  - Ask questions or paste content to discuss.
+  - If the assistant lists options (1., 2., 3.), you'll be prompted to pick one.
+
+Planned features:
+  - /tools  Access tool-calling (filesystem, shell, etc.)
+  - /search Web search integration
+`;
+  const boxed = boxen(chalk.white(help), {
+    padding: 1,
+    margin: 1,
+    borderColor: 'white',
+    borderStyle: 'classic',
+  });
+  console.log(boxed);
+}
