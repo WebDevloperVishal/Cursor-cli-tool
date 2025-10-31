@@ -7,7 +7,7 @@ export function renderBanner(){
         horizontalLayout: "fillted"
     })
 
-    const subtitle = `${chalk.cyan('Gemini-powered')} ${chalk.gray("•")} ${chalk.magenta} ${chalk.magenta("Cli Chat")}`
+    const subtitle = `${chalk.cyan('Gemini-powered')} ${chalk.gray("•")} ${chalk.magenta("Cli Chat")}`
 
     const content = `${title}\n${subtitle}`;
 
