@@ -25,6 +25,16 @@ async function main() {
             return;
         }
 
+        message.push({
+            role:"user",
+            parts:[
+                {
+                    type:"text",
+                    text:userText 
+                }
+            ]
+        })
+
     }
 
 }
