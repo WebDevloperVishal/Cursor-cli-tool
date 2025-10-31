@@ -35,7 +35,6 @@ async function main() {
             ]
         })
 
-
         printUser(userText)
     }
 
