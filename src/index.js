@@ -4,11 +4,12 @@ import { printHelp, printSystem } from "./cli/output-formatter.js";
 import { promptUser } from "./cli/inputer-handler.js";
 import { safeExit } from "./utils/helper.js";
 
+
+
+
 async function main() {
     renderBanner()
     printSystem("Type '/help' for commands. Type '/exit' to quite. " )
-
-
 
     while(true){
         const userText = await promptUser();
@@ -20,15 +21,12 @@ async function main() {
             return;
         }
 
-
         if(userText.trim().toLowerCase() ==="/help"){
             printHelp();
             return;
         }
 
-
     }
-
 
 }
 
