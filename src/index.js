@@ -26,15 +26,17 @@ async function main() {
         }
 
         message.push({
-            role:"user",
-            parts:[
+            role: "user",
+            parts: [
                 {
-                    type:"text",
-                    text:userText 
+                    type: "text",
+                    text: userText
                 }
             ]
         })
 
+
+        printUser(userText)
     }
 
 }
