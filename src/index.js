@@ -1,6 +1,6 @@
 import express from "express";
 import { renderBanner } from "./cli/banner.js";
-import { printHelp, printSystem } from "./cli/output-formatter.js";
+import { printHelp, printSystem, printUser } from "./cli/output-formatter.js";
 import { promptUser } from "./cli/inputer-handler.js";
 import { safeExit } from "./utils/helper.js";
 
