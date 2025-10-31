@@ -3,9 +3,9 @@ import boxen from "boxen";
 import chalk from "chalk";
 
 export function renderBanner(){
-    const title = figlet.textSync("OrbitAI", {
+    const title = chalk.green(figlet.textSync("OrbitAI", {
         horizontalLayout: "fillted"
-    })
+    }))
 
     const subtitle = `${chalk.cyan('Gemini-powered')} ${chalk.gray("•")} ${chalk.magenta("Cli Chat")}`
 
